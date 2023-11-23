@@ -4,6 +4,12 @@ services:
   catalogdb:
     image: mongo:latest
 
+  basketdb:
+    image: redis:latest
+
+  portainer:
+    image: portainer/portainer-ce
+
   mongo.express:
     image: mongo-express
 
@@ -13,5 +19,12 @@ services:
       context: .
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
 
+  basket.api:
+    image: ${DOCKER_REGISTRY-}basketapi
+    build:
+      context: .
+      dockerfile: Services/Basket/Basket.API/Dockerfile
+
 volumes:
   mongo_data:
+  portainer_data:
