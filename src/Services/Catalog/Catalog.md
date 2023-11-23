@@ -4,10 +4,6 @@
 - Business logic layer
 - Presentation layer
 
-## Simple Data-Driven, CRUD Microservice
-
-![image](https://github.com/linhvuquach/aspnetcore-microservices/assets/26388126/e1a245a6-b36d-4b69-8af9-2936cdb4680e)
-
 # Mongo + Commands
 
 1. Now we can interactive terminal for Mongo
