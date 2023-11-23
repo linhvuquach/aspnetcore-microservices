@@ -4,6 +4,9 @@ services:
   catalogdb:
     image: mongo:latest
 
+  basketdb:
+    image: redis:latest
+
   mongo.express:
     image: mongo-express
 
