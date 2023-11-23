@@ -15,13 +15,21 @@ services:
     ports:
       - "6379:6379"
 
+  portainer:
+    container_name: portainer
+    restart: always
+    ports:
+      - "8088:8000"
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
   mongo.express:
     container_name: mongo.express
     environment:
       - ME_CONFIG_OPTIONS_EDITORTHEME=ambiance
       - ME_CONFIG_MONGODB_SERVER=catalogdb
-      - ME_CONFIG_MONGODB_AUTH_USERNAME=admin
-      - ME_CONFIG_MONGODB_AUTH_PASSWORD=pass
     depends_on:
       - catalogdb
     ports:
