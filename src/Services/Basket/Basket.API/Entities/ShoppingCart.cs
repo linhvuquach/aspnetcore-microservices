@@ -8,7 +8,7 @@ public class ShoppingCart
 
   public ShoppingCart(string userName)
   {
-    Username = Username;
+    Username = userName;
   }
 
   public string Username { get; set; } = string.Empty;
