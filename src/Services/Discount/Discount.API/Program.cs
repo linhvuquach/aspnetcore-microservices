@@ -1,3 +1,4 @@
+using Discount.API.Extensions;
 using Discount.API.Repositories;
 using Microsoft.OpenApi.Models;
 
@@ -26,5 +27,7 @@ if (app.Environment.IsDevelopment())
 app.MapControllers();
 
 app.UseHttpsRedirection();
+
+app.MigrateDatabase<Program>();
 
 app.Run();
