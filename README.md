@@ -30,6 +30,14 @@ We've implemented below features over the run-aspnetcore-microservices repositor
 - Repository pattern implementation
 - Redis database connection and containerization
 
+## Discount microservice which includes:
+
+- ASP.NET Core Web API application
+- REST API principles, CRUD operations
+- Repository pattern implementation
+- PostgreSQL database connection and containerization. We're also use pgAdmin management portal for PostgresSQL database
+- Using Dapper for micro-orm implementation to simplify data access and ensure high performance
+
 # Tools
 
 ## Container Mangement
