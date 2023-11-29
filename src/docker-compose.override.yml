@@ -73,7 +73,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "CacheSettings__ConnectionString=basketdb:6379"
-      - "GrpcSettings__DiscountUrl=discount.grpc"
+      - "GrpcSettings__DiscountUrl=http://discount.grpc:8080"
     depends_on:
       - basketdb
     ports:
